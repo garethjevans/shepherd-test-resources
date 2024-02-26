@@ -8,7 +8,7 @@ metadata:
   name: shepherd-docker
   annotations:
     secretgen.carvel.dev/image-pull-secret: ""
-    tekton.dev/docker-0: #@ data.values.server + "/" + data.values.repository
+    tekton.dev/docker-0: #@ data.values.imported.tanzusupplychain.ocistore.server + "/" + data.values.imported.tanzusupplychain.ocistore.repository
 type: kubernetes.io/dockerconfigjson
 data:
   .dockerconfigjson: e30K
